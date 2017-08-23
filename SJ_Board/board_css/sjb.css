@@ -1,0 +1,104 @@
+@CHARSET "UTF-8"; /************* Common *************/
+
+body, p {
+	margin:0px;
+	padding:0px;
+}
+
+button{
+	cursor: pointer;
+}
+
+.main_table{ 
+	margin: auto;
+	width: 1000px;
+	padding: 0px 0px 20px 0px;
+	font-size: 12px;
+}/* 게시판   */
+
+.line {
+	padding: 2px 0px 2px 0px;
+	border-bottom:1px solid black;
+	text-align: center;
+}
+
+a.forum:link {text-decoration: none; color: black;} /*평상시 */
+a.forum:visited {text-decoration: none; color: #7e7e7e;} /*방문후*/
+a.forum:active {text-decoration: none; color: black;} /*클릭시*/
+a.forum:hover {text-decoration: underline;} /*마우스오버시*/
+
+a.write_a {text-decoration: none; color:black;}
+a.write_a:hover {text-decoration: underline;} /*마우스오버시*/
+
+a.menu {text-decoration: none; color:black;}
+a.select {text-decoration: none; color: black;}
+
+tr.forumtr:hover{ background-color: #bfecff; } /*게시판 목록 마우스오버시 */
+
+a.autolink {text-decoration: none; color: blue;} /* 댓글 자동링크부분  */
+a.autolink:hover {text-decoration: underline;color: red;}
+
+.book{ 
+	font-size:12px;
+	width:1000px;
+	border:1px solid #c4c4c4;
+}/* 게시판 목록  */
+.title { 
+	font-size: 16px;
+	width:100%;
+	text-align: left;
+	word-break: break-all;
+}/* 게시판 목록 제목  */
+.reply_count { 
+	color: #25710a;
+	font-weight: bold;
+}/* 게시판 목록의 댓글 갯수  */
+th.bookth {
+	border-bottom:1px solid #c4c4c4;
+	padding: 3px;
+} /* 게시판 목록의 제목부분 */
+td.booktd { 
+	border-bottom:1px solid #c4c4c4;
+	text-align: center;
+}/* 게시판 목록의 내용 부분  */
+tr.booktr { 
+	background-color: #f7f7f7;
+}/* 게시판 목록 제목부분  */
+
+.main_content{ 
+	padding: 5px 0px 5px 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.prev_next{ 
+	border: 1px solid #cccccc;
+	margin: 0px 3px 0px 3px;
+	padding: 0px 7px 0px 7px;
+	font-size: 14px;
+	cursor: pointer;
+}/* 게시판 네비 부분 */
+.prev_next:hover{background-color: #ececec;}
+.now_page {
+	border: 1px solid red;
+	color: red;
+}
+
+.wt_title{ width:918px } /* 글쓰기 제목부분 input 길이설정 */
+
+.list_bt{
+	padding-top: 2px;
+	text-align: right;
+}
+.wt_list_bt{ 
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	width: 60px;
+	height: 25px;
+	font-size: 12px;
+	cursor: pointer;
+	color: #c4c4c4;
+	background-color: #fff;
+	padding-bottom: 2px;
+}/* 버튼 모양 설정 */
+.wt_list_bt:hover{ background-color: #bfecff;color:black; } /* 버튼에 마우스 오버시 색상 변경 */

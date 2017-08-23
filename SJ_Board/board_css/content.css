@@ -1,0 +1,108 @@
+.reply_con {
+	float: left;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	word-break: break-all;
+}/* 댓글창 기본 설정 */
+.re_reply_con { 
+	float: left;
+	padding: 10px 0px 10px 0px;
+	width: 100%;
+	word-break: break-all;
+}/*대댓글창 기본 설정 */
+
+.content2 img { max-width:100%; height: auto;} /*내용부분 이미지 크기 자동조절 */
+.reply_img { max-width:100%; height: auto; max-height: 1000px;} /*댓글부분 이미지 크기 자동조절 */
+.re_reply_img { max-width:98%; height: auto; max-height: 1000px;} /*대댓글부분 이미지 크기 자동조절 */
+
+.content2{
+	width: 100%;
+	word-break: break-all;
+	font-size:13px;
+} /* 글내용 기본 설정 */
+
+.reply {
+	width: 975px;
+	border:1px solid #c4c4c4;
+	margin: 10px auto 10px auto;
+	padding: 0px;
+	font-size: 14px;
+	box-shadow: 1px 1px 1px 0px lightgray;
+	word-break: break-all;
+}/* 댓글창 세부 설정 */
+
+.reply_1{ 
+	float:left;
+	width:100%;
+}/* 댓글창 전체 위치및 크기 조정 */
+.reply_2{ 
+	float:left;
+	width:100%;
+	border-top: 2px dotted rgb(219, 219, 219);
+}/* 대댓글창 전체 위치및 크기 조정 */
+.reply_2_1{ 
+	float: left;
+	width: 4%;
+	padding: 10px 1% 0px 0px;
+	text-align: right;
+}/* 대댓글창 위치및 크기 조정  여기는 화살부분 */
+.reply_2_2{ 
+	float: left;
+	width: 93.5%;
+	padding: 10px 0px 0px 1.5%;
+	background-color: rgb(249, 249, 249);
+}/* 대댓글창 위치및 크기 조정  여기는 내용부분 */
+
+.rp_imgup_rp_bt{
+	width: 200px;
+	text-align: center;
+	margin-right:-5px;
+}/* 댓글입력창 div 설정 */
+.rp_bt{
+	width: 100%;
+	cursor: pointer;
+}/* 리플 버튼 설정 */
+
+.rp_hold{ 
+	color : red;
+}/* 리플 차단시 색깔 설정 */
+
+.list_report_bt{
+	padding: 0px 13px 2px 0px;
+	float: right;
+} /* 신고/목록 버튼 설정 */
+.ed_del_bt{
+	padding: 0px 0px 2px 12px;
+	float: left;
+} /* 수정/삭제 버튼 설정 */
+.de_ed_bt{ 
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	width: 40px;
+	height: 30px;
+	font-size: 12px;
+	cursor: pointer;
+	color: #c4c4c4;
+	background-color: #fff;
+	padding-bottom: 2px;
+}/* 버튼 모양 설정 */
+.de_ed_bt:hover{ background-color: #bfecff;color:black; } /* 버튼에 마우스 오버시 색상 변경 */
+
+.rp_good_bt{
+	border: 1px solid #cccccc;
+	font-size: 11px;
+	cursor: pointer;
+	color: red;
+	background-color: #fff;
+}/* 대댓글 버튼 */
+
+.content_book{
+	font-size:12px;
+	width:1000px;
+	border:1px solid #c4c4c4;
+} /* 게시판 내용 설정 */
+.rp { width: 100%;max-width: 800px; }
+.rp_date { 
+	font-size: 10px;
+	color: #848484;
+}/* 리플에 표시되는 날짜 */

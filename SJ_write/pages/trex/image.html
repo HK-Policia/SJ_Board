@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>YEAH - 이미지 첨부</title>
+<script src="../../js/popup.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function number_to_human_size(x) {
+	  var s = ['bytes', 'KB', 'MB', 'GB', 'TB', 'PB'];
+	  var e = Math.floor(Math.log(x) / Math.log(1024));
+	  
+	  document.getElementById("file_size_chk").innerHTML = (x / Math.pow(1024, e)).toFixed(2) + s[e];
+	};
+	function chk(){
+		var upload_file = document.getElementById("upload_file");
+		var file_count = upload_file.files.length;
+		var file_all_size = 0;
+		
+		for(var i=0;file_count>i; i++){
+			file_all_size += upload_file.files[i].size;
+		}
+		
+		number_to_human_size(file_all_size);
+		document.getElementById("file_count").innerHTML = file_count;
+	}
+</script>
+<link rel="stylesheet" href="../../css/popup.css" type="text/css"  charset="utf-8"/>
+</head>
+<body onload="initUploader();">
+<div class="wrapper">
+	<div class="header">
+		<h1>사진 첨부</h1>
+	</div>
+	<form method="post" enctype="multipart/form-data" action="../image_uploader.php">
+	<div class="body">
+		<dl class="alert">
+		    <dt>사진 업로드는 3MB이하의 JPG, JPEG, PNG , GIF 의 확장자 파일만 가능합니다.</dt>
+		    <dd>
+				한번에 10개의 이미지까지 업로드 가능합니다. (한개당 최대 3MB, 총 5MB까지)<BR>
+				<input id="upload_file" type="file" name="upload_file[]" onchange="chk()" multiple>
+			</dd>
+			<div style="float: right;">
+				<span id="file_count" style="color:black">0</span>/10개 <span id="file_size_chk" style="color:black">0</span>/5MB
+			</div>
+		</dl>		
+	</div>
+	<div class="footer">
+		<p><a href="#" onclick="closeWindow();" title="닫기" class="close">닫기</a></p>
+		<input type="submit" value="사진 등록">
+	</div>
+	</form>
+</div>
+</body>
+</html>
